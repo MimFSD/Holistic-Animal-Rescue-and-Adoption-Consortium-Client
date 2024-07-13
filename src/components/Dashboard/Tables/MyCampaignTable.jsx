@@ -10,6 +10,8 @@ const MyCampaignTable = ({ myCampaings, handlePause, handleActive }) => {
 
     let [isOpen, setIsOpen] = useState(false)
 
+
+
     function open() {
         setIsOpen(true)
     }
@@ -18,6 +20,8 @@ const MyCampaignTable = ({ myCampaings, handlePause, handleActive }) => {
         setIsOpen(false)
     }
 
+
+    
     const columns = [
         {
             name: 'ID',
