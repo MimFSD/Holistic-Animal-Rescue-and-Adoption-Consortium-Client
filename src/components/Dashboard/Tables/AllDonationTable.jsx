@@ -27,13 +27,12 @@ const AllDonationTable = ({ AllDonationCampaigns, handleDelete, handlePause, han
         {
             name: 'Campaign Status',
             selector: (data) => <p>{data.pauseStatus === true ? "Paused" : "Active"}</p>,
-
         },
         {
             name: 'Pause Campaign',
             selector: (data) => <div>
                 <Button onClick={() => handlePause(data._id)} disabled={data.pauseStatus} className={`py-[6px] normal-case ${data.pauseStatus ? "pl-[20px] pr-[21px]" : "px-[23px] bg-green-500"}`}>{data.pauseStatus ? "Paused" : "Pause"}</Button>
-                {
+                {   
                     data.pauseStatus === true && <Button onClick={() => handleActive(data._id)} className={`py-[6px] normal-case ml-3 px-5 bg-green-500`}> Active </Button>
                 }
             </div>,
