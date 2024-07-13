@@ -35,6 +35,7 @@ const UsersTable = ({ users, handleAdmin }) => {
             </div>,
         },
     ]
+    
     return (
         <DataTable columns={columns}
             data={users}
