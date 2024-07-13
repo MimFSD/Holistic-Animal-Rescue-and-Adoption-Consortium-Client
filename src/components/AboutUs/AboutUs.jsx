@@ -5,8 +5,8 @@ import { MdOutlinePets } from "react-icons/md";
 const AboutUs = () => {
     return (
         <div className="pb-20">
-            <div>
-                <div>
+            <div>     
+                <div>   
                     <h3 className="text-2xl font-semibold text-center">About Us</h3>
                     <p className="max-w-[500px] mx-auto text-center font-medium py-3"> where we believe every pet deserves a loving home and every home deserves a loving pet. </p>
                 </div>
@@ -18,8 +18,8 @@ const AboutUs = () => {
                         <div>
                             <h1 className="text-2xl font-semibold mb-3">Who We Are?</h1>
                             <p>We have facilitated countless successful adoptions and are committed to ensuring each adoption is a positive experience for both the pet and the adopter. Our dedicated team of volunteers and staff work tirelessly to provide excellent care and support to animals in need, preparing them for their forever homes.</p>
-                        </div>
-                        <div className="flex gap-5 justify-between">
+                        </div> 
+                        <div className="flex gap-5 justify-between">     
                             <div className="flex flex-col md:flex-row">
                                 <div className="flex gap-5 mt-16 max-w-[300px]">
                                     <div>
