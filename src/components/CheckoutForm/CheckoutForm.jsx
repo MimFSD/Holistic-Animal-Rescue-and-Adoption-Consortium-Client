@@ -30,16 +30,13 @@ const CheckoutForm = ({ amount, campaignData }) => {
                 toast.error('Failed to create payment intent.');
             });
     }, [axiosSecure, amount]);
-    
 
     const handlePaymentSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
-
         if (!stripe || !elements) {
             return;
         }
-
         const card = elements.getElement(CardElement);
 
         if (card === null) {

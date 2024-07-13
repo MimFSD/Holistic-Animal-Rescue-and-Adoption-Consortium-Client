@@ -17,11 +17,13 @@ const AllPetsTable = ({AllPets, handleDelete, handleAdopt}) => {
             sortable: true,
         },
         {
+
             name: 'Pet Name',
             selector: (data) => data.petName,
             sortable: true,
 
         },
+        
         {
             name: 'Adopt Status',
             selector: (data) => <p>{data.adopted === true ? "Adopted" : "Not Adopted"}</p>,
