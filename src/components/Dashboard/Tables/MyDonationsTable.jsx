@@ -20,13 +20,11 @@ const MyDonationsTable = ({MyDonationsData, handleRefund}) => {
             name: 'Campaign Name',
             selector: (data) => data.petName,
             sortable: true,
-
         },
         {
             name: 'Donated Amount',
             selector: (data) => <p>$ { data.paidAmount}</p>,
             sortable: true,
-
         },
         {
             name: 'Ask for Refund',
@@ -38,6 +36,7 @@ const MyDonationsTable = ({MyDonationsData, handleRefund}) => {
 
     ]
 
+    
     return (
         <DataTable columns={columns}
             data={MyDonationsData}
