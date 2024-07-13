@@ -5,6 +5,7 @@ import FeaturedStories from "../../components/FeaturedStories/FeaturedStories";
 import HappyClients from "../../components/HappyClients/HappyClients";
 import PetsCategory from "../../components/PetsCategory/PetsCategory";
 import Slider from "../../components/Slider/Slider";
+         
 
 const Home = () => {
     return (
