@@ -18,17 +18,19 @@ const CheckoutForm = ({ amount, campaignData }) => {
     const [clientSecret, setClientSecret] = useState('');
     const [transectionId, setTransectionId] = useState('');
 
-    
+
     useEffect(() => {
         axiosSecure.post('/payment-intent', { fees: amount })
             .then(res => {
                 setClientSecret(res.data.clientSecret);
             })
+
             .catch(err => {
                 console.error('Error creating payment intent:', err);
                 toast.error('Failed to create payment intent.');
             });
     }, [axiosSecure, amount]);
+    
 
     const handlePaymentSubmit = async (e) => {
         e.preventDefault();
