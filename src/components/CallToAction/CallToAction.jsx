@@ -29,7 +29,7 @@ const CallToAction = () => {
                             <h3 className="text-xl font-semibold mb-2">Saves a life</h3>
                             <p>Adopting from shelters or rescues gives homeless pets a chance for a better life.</p>
                         </div>
-                    </div>    
+                    </div>         
                     <div className="flex gap-4 max-w-[600px] mt-5">
                         <LiaHandPointRightSolid className="text-3xl w-12" />
                         <div>
@@ -37,7 +37,6 @@ const CallToAction = () => {
                             <p>Pet ownership has been shown to lower blood pressure and promote relaxation.</p>
                         </div>
                     </div>
-                    
                 </div>
                 <div>
                     <img className="rounded-xl" src="https://i.postimg.cc/NfB1cx4v/1524069748525.jpg" alt="Pet adopt image" />
@@ -46,5 +45,7 @@ const CallToAction = () => {
         </div>
     );
 };
+
+
 
 export default CallToAction;
