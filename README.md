@@ -37,7 +37,6 @@ The Holistic Animal Rescue and Adoption Consortium (HARAC) likely refers to an o
 ### Server Details
 
 
-
 1. **Website**:
    - A user-friendly website showcasing available animals for adoption, success stories, donation options, and educational resources.
    - Online adoption application forms and volunteer sign-up forms.
