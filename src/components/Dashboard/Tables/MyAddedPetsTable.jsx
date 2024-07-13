@@ -37,6 +37,7 @@ const MyAddedPetsTable = ({ myAddedPets, handlePetDelete, handleAdoptions }) => 
             sortable: true
         },
         {
+
             name: 'Actions',
             selector: (pet) => <div>
                 <Link to={`/dashboard/pet-update/${pet._id}`}><Button className='px-5 py-2 mr-2'>Update</Button></Link>
@@ -47,6 +48,7 @@ const MyAddedPetsTable = ({ myAddedPets, handlePetDelete, handleAdoptions }) => 
         },
     ]
 
+    
     return (
         <DataTable columns={columns}
             data={myAddedPets}
