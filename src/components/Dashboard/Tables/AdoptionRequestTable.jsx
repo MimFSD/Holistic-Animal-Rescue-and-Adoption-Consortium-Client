@@ -22,12 +22,14 @@ const AdoptionRequestTable = ({ filteredPet, handleAccept, handleRemove, }) => {
 
         },
         {
+
             name: 'Phone',
             selector: (user) => user.userPhone,
             sortable: true,
 
         },
         {
+
             name: 'Address',
             selector: (user) => user.userAddress,
             sortable: true,
@@ -43,6 +45,7 @@ const AdoptionRequestTable = ({ filteredPet, handleAccept, handleRemove, }) => {
         
     ]
 
+    
 
     return (
         <DataTable columns={columns}
