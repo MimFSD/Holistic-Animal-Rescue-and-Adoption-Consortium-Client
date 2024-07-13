@@ -6,6 +6,7 @@ import { ImSpinner } from 'react-icons/im';
 import toast from 'react-hot-toast';
 import UseAuth from '../../Hook/UseAuth';
 import useAxiosSecure from './../../Hook/useAxiosSecure';
+ 
 
 const CheckoutForm = ({ amount, campaignData }) => {
     const stripe = useStripe();
@@ -17,6 +18,7 @@ const CheckoutForm = ({ amount, campaignData }) => {
     const [clientSecret, setClientSecret] = useState('');
     const [transectionId, setTransectionId] = useState('');
 
+    
     useEffect(() => {
         axiosSecure.post('/payment-intent', { fees: amount })
             .then(res => {
