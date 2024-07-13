@@ -44,11 +44,12 @@ const Sidebar = () => {
                                 width='50'
                                 height='50'
                             />
+
+                            
                             <h1 className="font-semibold text-2xl">Pet House</h1>
                         </Link>
                     </div>
                 </div>
-
                 <button
                     onClick={handleToggle}
                     className='mobile-menu-button p-4 focus:outline-none focus:bg-blue-50'
