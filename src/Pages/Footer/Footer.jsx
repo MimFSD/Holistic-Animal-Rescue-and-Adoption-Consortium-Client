@@ -17,6 +17,7 @@ const Footer = () => {
         },
       ];
 
+
     return (
         <div>
             <footer className="relative w-full">
@@ -26,6 +27,7 @@ const Footer = () => {
                             <img className="h-10" src="https://i.postimg.cc/kg9MGmVF/Untitled-1.png" alt="" />
                             <h3 className="text-xl font-semibold">Pet House</h3>
                         </Typography>
+
                         <div className="grid grid-cols-3 justify-between gap-4">
                             {LINKS.map(({ title, items }) => (
                                 <ul key={title}>
@@ -34,6 +36,7 @@ const Footer = () => {
                                         color="blue-gray"
                                         className="mb-3 font-medium opacity-40"
                                     >
+                                        
                                         {title}
                                     </Typography>
                                     {items.map((link) => (
