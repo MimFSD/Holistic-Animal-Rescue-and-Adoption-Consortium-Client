@@ -22,8 +22,10 @@ const PetCard = ({ pet }) => {
                 <h2 className='text-2xl font-semibold'>{pet.petName || <Skeleton />}</h2>
                 <h3 className='font-semibold text-lg py-2'> Pet Age : {pet.petAge || <Skeleton count={3} />} Years</h3>
                 <p className='flex gap-3 items-center font-semibold'> <FaLocationDot />  {pet.petLocation || ""}</p>
-                <div>
+                <div> 
+
                     <Link to={`/pet-details/${pet._id || ""}`}><button className='w-full block mt-5 text-white hover:bg-gray-700 bg-gray-900 duration-300 px-5 text-center py-2 rounded-lg text-lg font-semibold'> See Details </button></Link>
+                    
                 </div>
             </div>
         </div>
