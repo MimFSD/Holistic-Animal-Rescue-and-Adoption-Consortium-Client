@@ -33,11 +33,8 @@ const UsersTable = ({ users, handleAdmin }) => {
             selector: (data) => <div>
                 <Button disabled={data.role === 'admin'} onClick={() => handleAdmin(data._id)}>Make Admin</Button>
             </div>,
-
         },
-
     ]
-
     return (
         <DataTable columns={columns}
             data={users}
@@ -50,7 +47,6 @@ const UsersTable = ({ users, handleAdmin }) => {
 UsersTable.propTypes = {
     users: PropTypes.array,
     handleAdmin: PropTypes.func,
-
 }
 
 export default UsersTable;
