@@ -8,7 +8,9 @@ const CampCard = ({ campaign }) => {
             <div>              
                 <img className='w-full h-[220px] object-cover rounded-lg' src={donationImageURL} alt="Pet Image" />
             </div>    
+
             
+
             <div className='p-5 bg-blue-50 rounded-b-lg shadow-md'>             
                 <h2 className='text-2xl font-semibold'>{campaignName}</h2>
 
