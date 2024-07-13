@@ -22,11 +22,14 @@ const FeaturedStories = () => {
                         </div>
                         <div className="flex gap-3 items-center mt-5">
                             <div>
+
                                 <FaUser/>
                             </div>
                             <div>
+
                                 <h4 className="font-semibold">Sanjida Ema</h4>
                                 <p>sanjidaema@gmail.com</p>
+                                
                             </div>
                         </div>
                     </div>
