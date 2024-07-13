@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 
 const AdoptModal = (isOpen, close) => {
 
-
-
     return (
         <Transition appear show={isOpen}>
             <Dialog as="div" className="relative z-10 focus:outline-none" onClose={close}>
