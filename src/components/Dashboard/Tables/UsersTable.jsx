@@ -35,8 +35,8 @@ const UsersTable = ({ users, handleAdmin }) => {
             </div>,
         },
     ]
-    
-    return (
+
+    return ( 
         <DataTable columns={columns}
             data={users}
             highlightOnHover
@@ -44,6 +44,7 @@ const UsersTable = ({ users, handleAdmin }) => {
             persistTableHead />
     );
 };
+
 
 UsersTable.propTypes = {
     users: PropTypes.array,
