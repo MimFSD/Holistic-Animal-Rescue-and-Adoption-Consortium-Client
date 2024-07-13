@@ -25,6 +25,7 @@ const AllDonationTable = ({ AllDonationCampaigns, handleDelete, handlePause, han
 
         },
         {
+            
             name: 'Campaign Status',
             selector: (data) => <p>{data.pauseStatus === true ? "Paused" : "Active"}</p>,
         },
@@ -44,7 +45,6 @@ const AllDonationTable = ({ AllDonationCampaigns, handleDelete, handlePause, han
                 <Link to={`/dashboard/update-campaign/${data._id}`}><Button className='px-4 py-[6px] normal-case bg-green-500'>Update</Button></Link>
                 <Button className='px-4 py-[6px] normal-case ml-2 bg-red-500' onClick={() => handleDelete(data._id)}>Delete</Button>
             </div>,
-
         },
 
     ]
