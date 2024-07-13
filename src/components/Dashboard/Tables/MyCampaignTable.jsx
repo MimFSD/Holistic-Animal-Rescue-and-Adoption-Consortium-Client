@@ -21,7 +21,7 @@ const MyCampaignTable = ({ myCampaings, handlePause, handleActive }) => {
     }
 
 
-    
+
     const columns = [
         {
             name: 'ID',
@@ -42,6 +42,7 @@ const MyCampaignTable = ({ myCampaings, handlePause, handleActive }) => {
             maxWidth: "200px"
         },
         {
+
             name: 'Donation Progress',
             selector: (data) => <div className='flex gap-3 items-center'>
                 {`${parseInt(data.totalDonatedAmount / data.maxDonationAmount * 100)} %`}
@@ -57,7 +58,10 @@ const MyCampaignTable = ({ myCampaings, handlePause, handleActive }) => {
                 {
                     data.pauseStatus === true && <Button onClick={() => handleActive(data._id)} className={`py-[6px] normal-case ml-3 px-5 bg-green-500`}> Active </Button>
                 }
+
+
             </div>,
+
             minWidth: "200px"
         },
         {
@@ -66,11 +70,14 @@ const MyCampaignTable = ({ myCampaings, handlePause, handleActive }) => {
                 <Link to={`/dashboard/update-campaign/${data._id}`}><Button className={`py-[6px] normal-case px-8 bg-green-500`}> Edit </Button></Link>
             </div>,
         },
+
+
         {
             name: 'View Donators',
             selector: (data) => <div>
                 <Button onClick={open} className='px-5 py-[6px]'>View</Button>
                 <div>
+                    
                     <Transition appear show={isOpen}>
                         <Dialog as="div" className="relative z-10 focus:outline-none" onClose={close}>
                             <div className="fixed inset-0 z-10 w-screen overflow-y-auto bg-black bg-opacity-40">
