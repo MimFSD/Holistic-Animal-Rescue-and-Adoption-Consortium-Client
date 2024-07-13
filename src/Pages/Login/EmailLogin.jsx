@@ -7,6 +7,8 @@ import { Helmet } from "react-helmet";
 import { Button } from "@material-tailwind/react";
 import toast from "react-hot-toast";
 
+
+
 const EmailLogin = () => {
 
     const { signInUser } = UseAuth();

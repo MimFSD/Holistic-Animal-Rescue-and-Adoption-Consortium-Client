@@ -10,6 +10,8 @@ import useAxiosPublic from "../../Hook/useAxiosPublic";
 import { Button } from "@material-tailwind/react";
 import uploadImage from "../../utility/utility";
 
+
+
 const SignUp = () => {
     const axiosPublic = useAxiosPublic()
     const [registerError, setRegisterError] = useState(' ');

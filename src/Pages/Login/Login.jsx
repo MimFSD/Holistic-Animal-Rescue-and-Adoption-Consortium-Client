@@ -6,6 +6,8 @@ import { Helmet } from "react-helmet";
 const Login = () => {
 
 
+
+
     return (
         <div>
             <Helmet>
@@ -13,6 +15,8 @@ const Login = () => {
                 <title>Login Now</title>
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
+
+
 
             <div className="md:mt-24">
                 <div className="card shrink-0 w-full h-full max-w-sm mx-auto rounded-xl shadow-2xl  p-4">
