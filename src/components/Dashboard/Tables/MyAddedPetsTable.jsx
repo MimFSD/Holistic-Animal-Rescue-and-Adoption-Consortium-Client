@@ -13,16 +13,17 @@ const MyAddedPetsTable = ({ myAddedPets, handlePetDelete, handleAdoptions }) => 
             maxWidth: "100px",
         },
         {
+
             name: 'Pet Name',
             selector: (pet) => pet.petName,
             sortable: true,
         },
+
         {
             name: 'Pet Category',
             selector: (pet) => pet.petCategory,
             sortable: true,
             maxWidth: "200px"
-
         },
         {
             name: 'Pet Image',
