@@ -1,10 +1,10 @@
 Website Name : Pet House
 
-Live Link : https://pethousebd.netlify.app
+Live Link : [Holistic Animal Rescue & Adoption Consortium](https://pethousebd.netlify.app)
 
-Admin Email : sanjida@gmail.com
+<!-- Admin Email : sanjida@gmail.com
 
-Admin Pass  : Sanjida123*
+Admin Pass  : Sanjida123* -->
 
 
 This website is a Pet Adoption & Donation related website. 
