@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import useAxiosSecure from "../../Hook/useAxiosSecure";
+      
 
 const PetListing = () => {
     const axiosSecure = useAxiosSecure();
@@ -18,6 +19,7 @@ const PetListing = () => {
     const fetchMoreItems = async () => {
         setIsLoading(true);
         try {
+            
             const { data } = await axiosSecure.get(`/pets?search=${search}&category=${selectedCategory}&limit=6&skip=${page * 6}`);
             if (data.length === 0) {
                 setHasMore(false);
