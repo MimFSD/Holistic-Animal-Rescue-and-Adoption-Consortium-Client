@@ -30,7 +30,6 @@ const AllPetsTable = ({AllPets, handleDelete, handleAdopt}) => {
         
         },
         {
-            
             name: 'Adopt Status',
             selector: (data) => <div>
                 <Button onClick={()=>handleAdopt(data._id)} disabled={data.adopted} className={`py-[6px] normal-case ${data.adopted ? "px-4" : "px-[23px] bg-green-500"}`}>{data.adopted ? "Adopted" : "Adopt"}</Button>
@@ -47,7 +46,6 @@ const AllPetsTable = ({AllPets, handleDelete, handleAdopt}) => {
         },
 
     ]
-
     return (
         <DataTable columns={columns}
             data={AllPets}
@@ -56,7 +54,6 @@ const AllPetsTable = ({AllPets, handleDelete, handleAdopt}) => {
             persistTableHead />
     );
 };
-
 
 AllPetsTable.propTypes = {
     AllPets: PropTypes.array,
