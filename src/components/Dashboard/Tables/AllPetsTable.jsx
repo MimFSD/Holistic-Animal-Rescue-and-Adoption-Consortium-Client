@@ -23,13 +23,14 @@ const AllPetsTable = ({AllPets, handleDelete, handleAdopt}) => {
             sortable: true,
 
         },
-        
+
         {
             name: 'Adopt Status',
             selector: (data) => <p>{data.adopted === true ? "Adopted" : "Not Adopted"}</p>,
         
         },
         {
+            
             name: 'Adopt Status',
             selector: (data) => <div>
                 <Button onClick={()=>handleAdopt(data._id)} disabled={data.adopted} className={`py-[6px] normal-case ${data.adopted ? "px-4" : "px-[23px] bg-green-500"}`}>{data.adopted ? "Adopted" : "Adopt"}</Button>
