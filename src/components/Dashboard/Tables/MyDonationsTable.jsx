@@ -36,7 +36,6 @@ const MyDonationsTable = ({MyDonationsData, handleRefund}) => {
 
     ]
 
-    
     return (
         <DataTable columns={columns}
             data={MyDonationsData}
@@ -45,6 +44,7 @@ const MyDonationsTable = ({MyDonationsData, handleRefund}) => {
             persistTableHead />
     );
 };
+
 
 MyDonationsTable.propTypes = {
     MyDonationsData: PropTypes.array,
