@@ -10,7 +10,7 @@ The Holistic Animal Rescue and Adoption Consortium (HARAC) likely refers to an o
 
 ### General Information
 
-**Name**: Holistic Animal Rescue and Adoption Consortium (
+**Name**: Holistic Animal Rescue and Adoption Consortium 
 
 **Mission**: To rescue, rehabilitate, and find forever homes for animals in need, using holistic methods that consider the physical, emotional, and mental well-being of each animal.
 
